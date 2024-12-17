@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой интернет-магазин</title>
+    <style>a.nodecoration{text-decoration: none; color: #000}</style>
 </head>
 <body>
-
+  <header>
+    <h1>{% block title %}Главная страница{% endblock %}</h1>
+  </header>
+  <main>
+      {% block content %}
+      <p><a href="#">Главная</a></p>
+      <p><a href="shop/">Магазин</a></p>
+      <p><a href="cart/">Корзина</a></p>
+      {% endblock %}
+  </main>
 </body>
 </html>

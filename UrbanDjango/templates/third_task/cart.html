@@ -3,13 +3,8 @@
 {% block title %}Магазин{% endblock %}
 
 {% block content %}
-<h2>Каталог товаров</h2>
-
-<ul>
-    {% for product in products %}
-    <li>{{ product.name }} — {{ product.price }} руб. <button>Купить</button></li>
-    {% endfor %}
-</ul>
+<h2>Ваша корзина</h2>
+<h4>Извините, корзина пуста</h4>
 <button><a href="/" class="nodecoration">Вернуться на главную</a></button>
 
 {% endblock %}
