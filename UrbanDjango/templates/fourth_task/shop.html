@@ -1,0 +1,21 @@
+{% extends './menu.html' %}
+
+{% block pagename %}
+    <h1>Магазин</h1>
+{% endblock %}
+
+{% block content %}
+    <h2>Каталог товаров</h2>
+{% if products %}
+    <ul>
+        {% for product in products %}
+        <li>{{ product }}
+            <button>Купить</button>
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h4>Нет доступных товаров</h4>
+{% endif %}
+<button><a href="/" class="nodecoration">Вернуться на главную</a></button>
+{% endblock %}

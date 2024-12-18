@@ -1,0 +1,12 @@
+{% extends './menu.html' %}
+{% load static %}
+
+{% block pagename %}
+    <h1>Корзина</h1>
+{% endblock %}
+
+{% block content %}
+    <img src="{% static 'images/empty.png' %}" alt="Пустая корзина" width="100">
+    <h4>Извините, ваша корзина пуста</h4>
+    <button><a href="/" class="nodecoration">Вернуться на главную</a></button>
+{% endblock %}
