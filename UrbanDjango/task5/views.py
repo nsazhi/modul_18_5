@@ -18,7 +18,7 @@ def sign_up_by_django(request):
             username = form.cleaned_data['username']
             password = form.cleaned_data['password']
             repeat_password = form.cleaned_data['repeat_password']
-            age = int(form.cleaned_data['age'])
+            age = form.cleaned_data['age']
             error = check_sign_up(username, password, repeat_password, age)
             if error:
                 info['error'] = error
